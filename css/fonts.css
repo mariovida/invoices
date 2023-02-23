@@ -1,0 +1,120 @@
+@font-face {
+  font-family: ff-primary;
+  src: url(../assets/fonts/PlusJakartaSans-ExtraLight.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-primary;
+  src: url(../assets/fonts/PlusJakartaSans-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-primary;
+  src: url(../assets/fonts/PlusJakartaSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-primary;
+  src: url(../assets/fonts/PlusJakartaSans-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-primary;
+  src: url(../assets/fonts/PlusJakartaSans-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-primary;
+  src: url(../assets/fonts/PlusJakartaSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-Thin.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-ThinItalic.ttf);
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-ExtraLight.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-ExtraLightItalic.ttf);
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-SemiBoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(../assets/fonts/Raleway-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
