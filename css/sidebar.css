@@ -2,8 +2,8 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #d1e0d2;
-  width: 240px;
+  background-color: #c3d5ee;
+  width: 260px;
   height: 100vh;
 }
 .sidebar_title {
@@ -23,7 +23,12 @@ nav {
 .sidebar_content {
   display: flex;
   flex-direction: column;
-  padding: 0 32px 0 16px;
+  padding: 0 16px;
+}
+.sidebar_content hr {
+  border-color: #749dd8;
+  border-width: 1px;
+  margin-bottom: 8px;
 }
 .sidebar_content a {
   display: block;
@@ -32,12 +37,14 @@ nav {
   font-weight: 500;
   color: #333333;
   text-decoration: none;
-  padding: 6px 8px;
+  padding: 8px;
   margin-bottom: 8px;
   border-radius: 6px;
 }
 .sidebar_content a.active,
 .sidebar_content a:hover {
+  background-color: #749dd8;
+}
+.sidebar_content a.active {
   font-weight: 600;
-  background-color: #a3c2a6;
 }
