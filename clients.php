@@ -23,30 +23,32 @@ include 'db_connect/connect.php';
                 <button class="add-client-btn">Add New Client</button>
             </div>
 
-            <table id="clientTable" class="clients_table">
-                <thead>
-                    <tr>
-                        <th>Client Name</th>
-                        <th>Email</th>
-                        <th>Country</th>
-                        <th>VAT Number</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                        $result = mysqli_query($dbc, "SELECT * FROM clients");
+            <div class="clients_table">
+                <table id="clientTable">
+                    <thead>
+                        <tr>
+                            <th>Client Name</th>
+                            <th>Email</th>
+                            <th>Country</th>
+                            <th>VAT Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            $result = mysqli_query($dbc, "SELECT * FROM clients");
 
-                        while ($row = mysqli_fetch_assoc($result)) {
-                            echo "<tr>";
-                            echo "<td>".$row['name']."</td>";
-                            echo "<td>".$row['email']."</td>";
-                            echo "<td>".$row['country']."</td>";
-                            echo "<td>".$row['vat_number']."</td>";
-                            echo "</tr>";
-                        }
-                    ?>
-                </tbody>
-            </table>
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                echo "<tr>";
+                                echo "<td>".$row['name']."</td>";
+                                echo "<td>".$row['email']."</td>";
+                                echo "<td>".$row['country']."</td>";
+                                echo "<td>".$row['vat_number']."</td>";
+                                echo "</tr>";
+                            }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
