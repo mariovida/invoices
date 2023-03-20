@@ -8,12 +8,13 @@ include 'db_connect/connect.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>" />
-    <title>Clients | Company</title>
+    <title>Invoices | Company</title>
 </head>
 <body>
     <?php
         include('elements/sidebar.php');
     ?>
-    <h1>Clients</h1>
+    
+    <h1>Invoices</h1>
 </body>
 </html>
