@@ -8,5 +8,6 @@
         <hr/>
         <a href="./invoices" <?php if (basename($_SERVER['PHP_SELF']) == 'invoices.php'){echo 'class="active"';} ?>>Invoices</a>
         <a href="./clients" <?php if (basename($_SERVER['PHP_SELF']) == 'clients.php'){echo 'class="active"';} ?>>Clients</a>
+        <a href="./transactions" <?php if (basename($_SERVER['PHP_SELF']) == 'transactions.php'){echo 'class="active"';} ?>>Transactions</a>
 </div>
 </nav>
