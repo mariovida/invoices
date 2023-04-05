@@ -31,7 +31,9 @@ nav {
   margin-bottom: 8px;
 }
 .sidebar_content a {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: ff-primary;
   font-size: 16px;
   font-weight: 500;
@@ -40,6 +42,9 @@ nav {
   padding: 8px;
   margin-bottom: 8px;
   border-radius: 6px;
+}
+.sidebar_content a img {
+  height: 18px;
 }
 .sidebar_content a.active,
 .sidebar_content a:hover {
