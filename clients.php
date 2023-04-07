@@ -14,6 +14,62 @@ include 'db_connect/connect.php';
     <?php
         include('elements/sidebar.php');
     ?>
-    <h1>Clients</h1>
+    <div class="wrapper">
+        <div class="wrapper_content">
+            <h1>Clients</h1>
+
+            <div class="clients_table_search">
+                <input type="text" placeholder="Search by client name..." id="searchInput">
+                <button class="add-client-btn">Add New Client</button>
+            </div>
+
+            <table id="clientTable" class="clients_table">
+                <thead>
+                    <tr>
+                        <th>Client Name</th>
+                        <th>Email</th>
+                        <th>Country</th>
+                        <th>VAT Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        $result = mysqli_query($dbc, "SELECT * FROM clients");
+
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo "<tr>";
+                            echo "<td>".$row['name']."</td>";
+                            echo "<td>".$row['email']."</td>";
+                            echo "<td>".$row['country']."</td>";
+                            echo "<td>".$row['vat_number']."</td>";
+                            echo "</tr>";
+                        }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("searchInput").addEventListener("keyup", function() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("clientTable");
+            tr = table.getElementsByTagName("tr");
+
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
